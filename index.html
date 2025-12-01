@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontend Developer Portfolio</title>
+    <meta
+      name="description"
+      content="Personal portfolio website showcasing frontend development skills, projects, and experience."
+    />
+    <link rel="stylesheet" href="index.css" />
+    <!-- Font Awesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER & NAVIGATION -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <div class="logo">Dipa Rani</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button
+          class="mobile-menu-toggle"
+          id="mobileMenuToggle"
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <!-- HOME SECTION -->
+    <section id="home">
+      <div class="container">
+        <div class="home-content">
+          <div class="home-text">
+            <h1>
+              I am a <span class="gradient-text">Frontend Developer</span>
+            </h1>
+            <p>
+              Passionate about creating beautiful, responsive, and user-friendly
+              web experiences. I specialize in modern web technologies and clean
+              code architecture to bring ideas to life.
+            </p>
+
+            <div class="home-actions">
+              <a
+                href="/Files/SQA CV DIPA RANI.pdf"
+                download="Dipa_Rani_CV.pdf"
+                class="btn btn-primary"
+                id="downloadCV"
+              >
+                <i class="fas fa-download"></i>
+                Download CV
+              </a>
+
+              <div class="social-links">
+                <a
+                  href="https://www.facebook.com/arpita.arpitaathaydipa/"
+                  target="_blank"
+                  class="social-icon"
+                  aria-label="Facebook"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://github.com/diparani22"
+                  target="_blank"
+                  class="social-icon"
+                  aria-label="GitHub"
+                >
+                  <i class="fab fa-github"></i>
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/diparani01/"
+                  target="_blank"
+                  class="social-icon"
+                  aria-label="LinkedIn"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="home-image">
+            <img src="/Image/Dipa Rani.png" alt="Developer workspace" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICE SECTION -->
+    <section id="service">
+      <div class="container">
+        <div class="section-title">
+          <h2>My Services</h2>
+        </div>
+
+        <div class="service-grid">
+          <div class="service-card slide-up">
+            <div class="service-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3>Frontend Development</h3>
+            <p>
+              Building responsive and performant Frontend websites using modern
+              frameworks and best practices. Clean, maintainable code is my
+              priority.
+            </p>
+          </div>
+
+          <div class="service-card slide-up">
+            <div class="service-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>Responsive Design</h3>
+            <p>
+              Creating seamless experiences across all devices. Mobile-first
+              approach ensures your website looks great everywhere.
+            </p>
+          </div>
+
+          <div class="service-card slide-up">
+            <div class="service-icon">
+              <i class="fas fa-cogs"></i>
+            </div>
+            <h3>SQA</h3>
+            <p>
+              SQA Engineer skilled in manual & automation testing, test
+              planning, regression testing, and API testing. Experienced with
+              Agile, SDLC/STLC, Jira, Postman, and Selenium. Focused on
+              delivering high-quality, stable software.
+            </p>
+          </div>
+
+          <div class="service-card slide-up">
+            <div class="service-icon">
+              <i class="fas fa-bullhorn"></i>
+            </div>
+            <h3>Digital Marketing</h3>
+            <p>
+              Digital Marketing professional skilled in SEO, social media, and
+              campaign management. Focused on driving engagement and brand
+              growth.
+            </p>
+          </div>
+
+          <div class="service-card slide-up">
+            <div class="service-icon">
+              <i class="fas fa-search"></i>
+            </div>
+            <h3>SEO Optimization</h3>
+            <p>
+              Implementing SEO best practices to improve search engine rankings
+              and increase organic traffic.
+            </p>
+          </div>
+
+          <div class="service-card slide-up">
+            <div class="service-icon">
+              <i class="fas fa-tools"></i>
+            </div>
+            <h3>Maintenance & Support</h3>
+            <p>
+              Providing ongoing maintenance and support to keep your website
+              running smoothly and up-to-date.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESUME SECTION -->
+    <section id="resume">
+      <div class="container">
+        <div class="section-title">
+          <h2>Resume</h2>
+        </div>
+
+        <div class="resume-content">
+          <div class="resume-nav">
+            <button class="resume-tab active" data-tab="about">
+              <span>About Me</span>
+            </button>
+            <button class="resume-tab" data-tab="skills">
+              <span>Skills</span>
+            </button>
+            <button class="resume-tab" data-tab="experience">
+              <span>Experience</span>
+            </button>
+            <button class="resume-tab" data-tab="education">
+              <span>Education</span>
+            </button>
+            <button class="resume-tab" data-tab="training">
+              <span>Training</span>
+            </button>
+          </div>
+
+          <div class="resume-details">
+            <!-- About Me Section -->
+            <div class="resume-section active" id="about">
+              <h3>About Me</h3>
+              <p>
+                I'm a passionate Frontend Developer with a keen eye for design
+                and a love for creating seamless user experiences. With several
+                years of experience in web development, I specialize in building
+                modern, responsive websites using the latest technologies.
+              </p>
+
+              <p>
+                My approach combines technical expertise with creative
+                problem-solving to deliver solutions that not only look great
+                but also perform exceptionally well. I'm constantly learning and
+                staying up-to-date with the latest trends and best practices in
+                web development.
+              </p>
+
+              <p>
+                When I'm not coding, you'll find me exploring new technologies,
+                contributing to open-source projects, or sharing knowledge with
+                the developer community.
+              </p>
+
+              <div style="margin-top: 2rem">
+                <p><strong>Name:</strong>Dipa Rani</p>
+                <p><strong>Location:</strong> Dhanmondi 27,Dhaka,Bangladesh</p>
+                <p><strong>Email:</strong>diparani0320@gmail.com</p>
+                <p><strong>Phone:</strong>01618506848</p>
+              </div>
+            </div>
+
+            <!-- Skills Section -->
+            <div class="resume-section" id="skills">
+              <h3>Skills</h3>
+              <div class="skills-grid">
+                <div class="skill-item">
+                  <div class="skill-name">HTML/CSS</div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 95%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-name">JavaScript</div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-name">React.js</div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-name">SQA</div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-name">Responsive Design</div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 95%"></div>
+                  </div>
+                </div>
+
+                <div class="skill-item">
+                  <div class="skill-name">Git & GitHub</div>
+                  <div class="skill-bar">
+                    <div class="skill-progress" style="width: 88%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experience Section -->
+            <div class="resume-section" id="experience">
+              <h3>Work Experience</h3>
+
+              <div class="timeline-item">
+                <h4>SEO Expert & Wordpress Developer</h4>
+                <div class="timeline-date">2024 - 2025</div>
+                <p><strong>A2IT LIMITED</strong></p>
+                <p>
+                  Leading SEO strategy and optimization for multiple
+                  high-traffic websites. Implementing on-page and off-page SEO
+                  techniques and mentoring junior team members.
+                </p>
+                <ul>
+                  <li>
+                    Improved organic search traffic by 50% within 6 months
+                  </li>
+                  <li>
+                    Conducted keyword research, content optimization, and link
+                    building campaigns
+                  </li>
+                  <li>
+                    Implemented SEO audits and performance tracking using Google
+                    Analytics & Search Console
+                  </li>
+                </ul>
+              </div>
+
+              <!-- <div class="timeline-item">
+                <h4>Frontend Developer</h4>
+                <div class="timeline-date">2020 - 2022</div>
+                <p><strong>Digital Agency</strong></p>
+                <p>
+                  Developed responsive websites and web applications for various
+                  clients using React, Vue.js, and vanilla JavaScript.
+                </p>
+                <ul>
+                  <li>Completed 20+ client projects</li>
+                  <li>Specialized in e-commerce solutions</li>
+                  <li>Achieved 98% client satisfaction rate</li>
+                </ul>
+              </div>
+
+              <div class="timeline-item">
+                <h4>Junior Web Developer</h4>
+                <div class="timeline-date">2018 - 2020</div>
+                <p><strong>Startup Solutions</strong></p>
+                <p>
+                  Started career building landing pages and simple web
+                  applications. Gained expertise in HTML, CSS, JavaScript, and
+                  responsive design.
+                </p>
+                <ul>
+                  <li>Built 30+ landing pages</li>
+                  <li>Learned modern web development practices</li>
+                  <li>Contributed to team code reviews</li>
+                </ul>
+            </div> -->
+            </div>
+
+            <!-- Education Section -->
+            <div class="resume-section" id="education">
+              <h3>Education</h3>
+
+              <div class="timeline-item">
+                <h4>Bachelor of Science in Computer Science and Engineering</h4>
+                <div class="timeline-date">2020 - 2024</div>
+                <p>
+                  <strong
+                    >Bangladesh university Of Business & Technology</strong
+                  >
+                </p>
+                <p>
+                  Graduated with honors. Focused on web technologies, software
+                  engineering.
+                </p>
+                <ul>
+                  <li>Dean's List all semesters</li>
+                  <li>Led university web development club</li>
+                </ul>
+              </div>
+
+              <div class="timeline-item">
+                <h4>Higher Secondary Certificate</h4>
+                <div class="timeline-date">2019</div>
+                <p><strong>Amrita Lal Dey College</strong></p>
+                <p>I have passed HSC in Science from Amrita Lal Dey College</p>
+              </div>
+            </div>
+
+            <!-- Training Section -->
+            <div class="resume-section" id="training">
+              <h3>Training & Certifications</h3>
+
+              <div class="timeline-item">
+                <h4>Full Stack Web Development(MERN)</h4>
+                <div class="timeline-date">2025 On Going</div>
+                <p><strong>Interactive Cares</strong></p>
+                <p>
+                  Building responsive web applications with front-end & back-end
+                  integration. Learning MERN stack (MongoDB, Express.js,
+                  React.js, Node.js)
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <h4>Webcamp By Programming Hero(BOOTCAMP)</h4>
+                <div class="timeline-date">2025</div>
+                <p><strong>Programming Hero</strong></p>
+                <p>
+                  Frontend Development (HTML, CSS, JavaScript) Programming Hero
+                  Bootcamp — Ongoing/Completed [2025] Learning frontend
+                  development using HTML, CSS, and JavaScript Gaining hands-on
+                  experience in building responsive and interactive web pages
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <h4>Software Quality Assurance</h4>
+                <div class="timeline-date">2025</div>
+                <p><strong>Road To SDET</strong></p>
+                <p>
+                  Software Quality Assurance (SQA) Course Road To SDET —
+                  Completed [Month, Year] Completed comprehensive SQA training
+                  with multiple hands-on projects Skilled in manual testing, API
+                  testing, test case design, regression testing, and bug
+                  reporting Familiar with SDLC/STLC, Agile methodologies, Jira,
+                  Postman, and Selenium
+                </p>
+              </div>
+
+              <div class="timeline-item">
+                <h4>Digital Marketing</h4>
+                <div class="timeline-date">2020</div>
+                <p><strong>ABCL IT</strong></p>
+                <p>
+                  Digital Marketing Course ABCL IT — Completed [2023] Completed
+                  comprehensive Digital Marketing training covering SEO, social
+                  media marketing, content marketing, and paid campaigns Gained
+                  hands-on experience in creating and optimizing marketing
+                  campaigns across platforms like Facebook, Instagram, and
+                  Google Ads Learned analytics and performance tracking to
+                  improve engagement and brand visibility Developed practical
+                  skills in keyword research, on-page/off-page SEO, and
+                  marketing strategy implementation
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PORTFOLIO SECTION -->
+    <section id="portfolio">
+      <div class="container">
+        <div class="section-title">
+          <h2>Portfolio</h2>
+        </div>
+
+        <div class="portfolio-grid">
+          <div class="portfolio-item">
+            <img
+              src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=450&fit=crop"
+              alt="Business Dashboard"
+            />
+            <div class="portfolio-overlay">
+              <h3>Business Dashboard</h3>
+              <p>Analytics dashboard with real-time data visualization</p>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <img
+              src="https://images.unsplash.com/photo-1557821552-17105176677c?w=600&h=450&fit=crop"
+              alt="E-commerce Platform"
+            />
+            <div class="portfolio-overlay">
+              <h3>E-commerce Platform</h3>
+              <p>Full-featured online shopping experience</p>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <img
+              src="https://images.unsplash.com/photo-1551650975-87deedd944c3?w=600&h=450&fit=crop"
+              alt="Mobile App Landing"
+            />
+            <div class="portfolio-overlay">
+              <h3>Mobile App Landing</h3>
+              <p>Beautiful landing page for mobile application</p>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <img
+              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=450&fit=crop"
+              alt="Corporate Website"
+            />
+            <div class="portfolio-overlay">
+              <h3>Corporate Website</h3>
+              <p>Professional business website with CMS integration</p>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <img
+              src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?w=600&h=450&fit=crop"
+              alt="Social Media App"
+            />
+            <div class="portfolio-overlay">
+              <h3>Social Media App</h3>
+              <p>Interactive social platform with real-time features</p>
+            </div>
+          </div>
+
+          <div class="portfolio-item">
+            <img
+              src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=450&fit=crop"
+              alt="Finance Tracker"
+            />
+            <div class="portfolio-overlay">
+              <h3>Finance Tracker</h3>
+              <p>Personal finance management application</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects">
+      <div class="container">
+        <div class="section-title">
+          <h2>Recent Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1555421689-d68471e189f2?w=600&h=400&fit=crop"
+                alt="Task Manager"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Task Management App</h3>
+              <div class="project-tags">
+                <span class="tag">React</span>
+                <span class="tag">Redux</span>
+                <span class="tag">Node.js</span>
+              </div>
+              <p>
+                A comprehensive task management application with team
+                collaboration features, real-time updates, and intuitive
+                drag-and-drop interface.
+              </p>
+              <div class="project-links">
+                <a href="#" class="btn btn-secondary">View Demo</a>
+                <a href="#" class="btn btn-secondary">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=400&fit=crop"
+                alt="Weather App"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Weather Forecast App</h3>
+              <div class="project-tags">
+                <span class="tag">Vue.js</span>
+                <span class="tag">API</span>
+                <span class="tag">CSS3</span>
+              </div>
+              <p>
+                Beautiful weather application with 7-day forecasts, location
+                search, and interactive weather maps using real-time data.
+              </p>
+              <div class="project-links">
+                <a href="#" class="btn btn-secondary">View Demo</a>
+                <a href="#" class="btn btn-secondary">Source Code</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <img
+                src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&h=400&fit=crop"
+                alt="Recipe App"
+              />
+            </div>
+            <div class="project-info">
+              <h3>Recipe Finder</h3>
+              <div class="project-tags">
+                <span class="tag">JavaScript</span>
+                <span class="tag">REST API</span>
+                <span class="tag">Bootstrap</span>
+              </div>
+              <p>
+                Recipe discovery platform with ingredient search, nutritional
+                information, and step-by-step cooking instructions.
+              </p>
+              <div class="project-links">
+                <a href="#" class="btn btn-secondary">View Demo</a>
+                <a href="#" class="btn btn-secondary">Source Code</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-title">
+          <h2>Get In Touch</h2>
+        </div>
+
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Email</h4>
+                <p>diparani0320@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Phone</h4>
+                <p>01618506848</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-map-marker-alt"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Location</h4>
+                <p>Dhaka,Bangladesh</p>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div class="contact-details">
+                <h4>Website</h4>
+                <p>www.mywebsite.com</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-bottom">
+        <p>© 2025 Dipa Rani. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
